@@ -1,4 +1,4 @@
-name: Await Check Suites
+name: Await Check Suites 2
 description: Wait for a commit's check suites to complete
 author: Jitterbit, Inc.
 branding:
