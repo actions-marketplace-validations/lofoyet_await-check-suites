@@ -11,10 +11,10 @@ Wait for a commit's check suites to complete.
 See [action.yml](action.yml)
 
 ```yaml
-- uses: lofoyet/await-check-suites@v1
+- uses: lofoyet/await-check-suites-2@v1
   with:
     # The commit's repository name with owner.
-    # For example, lofoyet/await-check-suites.
+    # For example, lofoyet/await-check-suites-2.
     # Default: ${{ github.repository }}
     repository: ''
 
@@ -63,13 +63,13 @@ See [action.yml](action.yml)
 ## Wait for other check suites on this commit to complete
 
 ```yaml
-- uses: lofoyet/await-check-suites@v1
+- uses: lofoyet/await-check-suites-2@v1
 ```
 
 ## Wait for all check suites on a commit in another repo to complete
 
 ```yaml
-- uses: lofoyet/await-check-suites@v1
+- uses: lofoyet/await-check-suites-2@v1
   with:
     repository: lofoyet/git-ops
     ref: ${{ env.git_ops_commit_sha }}
@@ -79,7 +79,7 @@ See [action.yml](action.yml)
 ## Wait for the first GitHub Actions check suite on this commit to complete
 
 ```yaml
-- uses: lofoyet/await-check-suites@v1
+- uses: lofoyet/await-check-suites-2@v1
   with:
     appSlugFilter: github-actions
     onlyFirstCheckSuite: true
